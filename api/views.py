@@ -16,6 +16,7 @@ from .permissions import IsOwner
 from rest_framework.filters import OrderingFilter, SearchFilter
 
 
+
 class RestaurantListView(ListAPIView):
     queryset = Restaurant.objects.all()
     serializer_class = RestaurantListSerializer
